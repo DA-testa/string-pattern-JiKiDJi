@@ -68,8 +68,7 @@ def get_occurrences(pattern, text):
             num+=t
         else:
             return[-1]
-    print(num)
-    
+        
     ans = []
     for i in range(len(nums)):
         if num == nums[i]:
