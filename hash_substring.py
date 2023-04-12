@@ -17,8 +17,6 @@ def read_input():
         text = input() 
     else: 
         return
-    print(fd)
-    print(text)
     return (fd, text)
 
 def print_occurrences(output):
@@ -68,15 +66,12 @@ def get_occurrences(pattern, text):
         if(t!=-1):
             num+=t
         else:
-            print(hmap)
             return[-1]
     
     ans = []
     for i in range(len(nums)):
         if num == nums[i]:
             ans.append(i)
-
-
 
     return ans
 
