@@ -68,6 +68,7 @@ def get_occurrences(pattern, text):
         if(t!=-1):
             num+=t
         else:
+            print(hmap)
             return[-1]
     
     ans = []
