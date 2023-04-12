@@ -66,8 +66,8 @@ def get_occurrences(pattern, text):
         t = find_letter(pattern[i])
         if(t!=-1):
             num+=t
-        else:
-            return[-1]
+#         else:
+#             return[-1]
     
     ans = []
     for i in range(len(nums)):
