@@ -33,7 +33,9 @@ def get_occurrences(pattern, text):
         
     n = len(pattern)
     l = len(text)
-
+    print(pattern)
+    print(text)
+    
     num = 0
     for i in range(n):
         num *= 10
@@ -58,7 +60,7 @@ def get_occurrences(pattern, text):
             hmap.append([text[i],len(hmap)+1])
             num+=len(hmap)
         nums.append(num)
-
+    print(nums)
     num = 0
     for i in range(n):
         num *= 10
