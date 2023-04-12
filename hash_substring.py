@@ -4,7 +4,7 @@ def read_input():
     
     let = input()[0]
     if let == 'F' :
-        inp = input()
+        inp = "06"
         if 'a' in inp:
             return
         inp = "tests/" + inp
@@ -68,7 +68,7 @@ def get_occurrences(pattern, text):
             num+=t
         else:
             return[-1]
-        
+    
     ans = []
     for i in range(len(nums)):
         if num == nums[i]:
@@ -82,3 +82,4 @@ def get_occurrences(pattern, text):
 # this part launches the functions
 if __name__ == '__main__':
     print_occurrences(get_occurrences(*read_input()))
+
