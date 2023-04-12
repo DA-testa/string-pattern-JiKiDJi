@@ -15,9 +15,10 @@ def read_input():
     elif let == 'I' :
         fd = input()
         text = input() 
-
     else: 
         return
+    print(fd)
+    print(text)
     return (fd, text)
 
 def print_occurrences(output):
@@ -66,8 +67,8 @@ def get_occurrences(pattern, text):
         t = find_letter(pattern[i])
         if(t!=-1):
             num+=t
-#         else:
-#             return[-1]
+        else:
+            return[-1]
     
     ans = []
     for i in range(len(nums)):
