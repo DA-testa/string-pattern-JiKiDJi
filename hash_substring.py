@@ -21,7 +21,7 @@ def read_input():
     return (fd, text)
 
 def print_occurrences(output):
-    print(' '.join(map(str, output)))
+    print(*output, sep = " ")
 
 def get_occurrences(pattern, text):
     hmap = []
