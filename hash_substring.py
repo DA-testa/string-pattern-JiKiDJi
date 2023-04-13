@@ -9,9 +9,8 @@ def read_input():
             return
         inp = "tests/" + inp
         with open(inp) as file: 
-            temp = file.read().splitlines() 
-            fd = temp[0]
-            text = temp[1]
+            fd = file.readline()
+            text = file.readline()
     elif let == 'I' :
         fd = input()
         text = input() 
