@@ -35,7 +35,7 @@ def get_occurrences(pattern, text):
     
     num = 0
     for i in range(n):
-        num *= 10
+        num *= 100
         t = find_letter(text[i])
         if(t!=-1):
             num+=t
@@ -48,8 +48,8 @@ def get_occurrences(pattern, text):
     for i in range(n, l):
 
         t=find_letter(text[i-n])
-        num -= (10**(n-1))*t
-        num *= 10
+        num -= (100**(n-1))*t
+        num *= 100
         t=find_letter(text[i])
         if(t!=-1):
             num+=t
@@ -60,7 +60,7 @@ def get_occurrences(pattern, text):
 
     num = 0
     for i in range(n):
-        num *= 10
+        num *= 100
         t = find_letter(pattern[i])
         if(t!=-1):
             num+=t
