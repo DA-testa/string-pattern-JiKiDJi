@@ -24,6 +24,7 @@ def print_occurrences(output):
 def get_occurrences(pattern, text):
     hmap = []
     nums = []
+    fl = 100**(n-1)
     def find_letter(let):
         for j in range(len(hmap)):
             if (let == hmap[j][0]):
@@ -48,7 +49,7 @@ def get_occurrences(pattern, text):
     for i in range(n, l):
 
         t=find_letter(text[i-n])
-        num -= (100**(n-1))*t
+        num -= fl*t
         num *= 100
         t=find_letter(text[i])
         if(t!=-1):
